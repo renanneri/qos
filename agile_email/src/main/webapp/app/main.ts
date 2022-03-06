@@ -31,11 +31,6 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
-import ContactService from '@/entities/contact/contact.service';
-import GroupService from '@/entities/group/group.service';
-import MailService from '@/entities/mail/mail.service';
-import ScheduleEmailProcessService from '@/entities/schedule-email-process/schedule-email-process.service';
-import ChooseGroupProcessService from '@/entities/choose-group-process/choose-group-process.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -99,11 +94,6 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
-    contactService: () => new ContactService(),
-    groupService: () => new GroupService(),
-    mailService: () => new MailService(),
-    scheduleEmailProcessService: () => new ScheduleEmailProcessService(),
-    chooseGroupProcessService: () => new ChooseGroupProcessService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },
