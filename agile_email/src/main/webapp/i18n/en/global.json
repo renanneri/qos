@@ -12,6 +12,12 @@
         "processInstance": "Process Instances",
         "taskInstance": "All Tasks",
         "myCandidateTasks": "My Tasks",
+        "contact": "Contact",
+        "group": "Group",
+        "mail": "Mail",
+        "scheduleEmailProcess": "Schedule Email Process",
+        "startGroupForm": "Start Group Form",
+        "chooseGroupProcess": "Choose Group Process",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

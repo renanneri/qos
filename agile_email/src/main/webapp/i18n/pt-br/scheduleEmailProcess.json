@@ -1,0 +1,25 @@
+{
+  "agileEmailApp": {
+    "scheduleEmailProcess": {
+      "home": {
+        "title": "Schedule Email Processes",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Schedule Email Process",
+        "createOrEditLabel": "Criar ou editar Schedule Email Process",
+        "notFound": "Nenhum Schedule Email Process encontrado"
+      },
+      "created": "Um novo Schedule Email Process foi criado com o identificador {{ param }}",
+      "updated": "Um Schedule Email Process foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Schedule Email Process foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Schedule Email Process {{ id }}?"
+      },
+      "detail": {
+        "title": "Schedule Email Process"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}

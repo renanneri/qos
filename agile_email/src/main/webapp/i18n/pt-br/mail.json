@@ -1,0 +1,19 @@
+{
+  "agileEmailApp": {
+    "mail": {
+      "home": {
+        "title": "Mail",
+        "refreshListLabel": "Atualizar lista",
+        "notFound": "Nenhum Mail encontrado"
+      },
+      "detail": {
+        "title": "Mail"
+      },
+      "id": "ID",
+      "subject": "Subject",
+      "recipient": "Recipient",
+      "message": "Message",
+      "group": "Group"
+    }
+  }
+}

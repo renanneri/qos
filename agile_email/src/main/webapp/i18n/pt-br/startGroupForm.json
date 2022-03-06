@@ -1,0 +1,24 @@
+{
+  "agileEmailApp": {
+    "startGroupForm": {
+      "home": {
+        "title": "Start Group Forms",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Start Group Form",
+        "createOrEditLabel": "Criar ou editar Start Group Form",
+        "notFound": "Nenhum Start Group Form encontrado"
+      },
+      "created": "Um novo Start Group Form foi criado com o identificador {{ param }}",
+      "updated": "Um Start Group Form foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Start Group Form foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Start Group Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Start Group Form"
+      },
+      "id": "ID",
+      "GroupName": "Group Name"
+    }
+  }
+}

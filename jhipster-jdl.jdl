@@ -1,4 +1,4 @@
-entity User {
+entity Contact {
 	firstName String required
     lastName String
     gender String 
@@ -19,7 +19,7 @@ entity Mail {
 }
 
 relationship ManyToOne {
-	User{group} to Group
+	Contact{group} to Group
 }
 
 relationship ManyToMany{

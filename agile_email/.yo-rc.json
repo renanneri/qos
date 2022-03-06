@@ -52,6 +52,7 @@
     "jwtSecretKey": "MGU1ZWFhYzc2NWRiMDRhM2ViMzlhNTU3MTcyYTFhZGJkYjljYjdlMzIxMjY2OTUzZTdkYTczNzJhNWZiYzA5NTUyOGQ1YzQwYWNhN2RiODU4ZDcyZGEyNzlhYzBjYTA5ZGVhYmM2M2EyMjA4NjQ2MDZiYzRhOWFlNWVmYWIyOGM=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en", "pt-br"]
+    "languages": ["en", "pt-br"],
+    "entities": ["Contact", "Group", "Mail"]
   }
 }

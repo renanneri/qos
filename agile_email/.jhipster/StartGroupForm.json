@@ -1,0 +1,21 @@
+{
+  "fields": [
+    {
+      "fieldName": "GroupName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "email-sender",
+  "processEntityName": "ChooseGroupProcess",
+  "domainEntityName": "Group",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "StartGroupForm",
+  "changelogDate": "20220210163000",
+  "skipFakeData": true
+}
