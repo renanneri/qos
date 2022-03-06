@@ -1,19 +1,15 @@
 {
   "fields": [
     {
-      "fieldName": "firstName",
+      "fieldName": "subject",
       "fieldType": "String"
     },
     {
-      "fieldName": "lastName",
+      "fieldName": "recipient",
       "fieldType": "String"
     },
     {
-      "fieldName": "gender",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "mailAdress",
+      "fieldName": "message",
       "fieldType": "String"
     },
     {
@@ -26,9 +22,9 @@
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
-  "readOnly": false,
+  "readOnly": true,
   "pagination": "no",
-  "name": "Contact",
+  "name": "EmailEvent",
   "changelogDate": "20210401000001",
   "skipFakeData": true
 }

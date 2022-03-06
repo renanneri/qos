@@ -14,7 +14,7 @@
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
-  "readOnly": true,
+  "readOnly": false,
   "pagination": "no",
   "name": "Group",
   "changelogDate": "20210401000001",

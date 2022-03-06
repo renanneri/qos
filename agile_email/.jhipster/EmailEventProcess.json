@@ -18,13 +18,15 @@
     }
   ],
   "relationships": [],
-  "entityType": "domain",
+  "entityType": "process-binding",
+  "processBpmnId": "EmailEventProcess",
+  "domainEntityName": "EmailEvent",
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
-  "readOnly": true,
+  "readOnly": false,
   "pagination": "no",
-  "name": "Mail",
-  "changelogDate": "20210401000001",
+  "name": "EmailEventProcess",
+  "changelogDate": "20220210094600",
   "skipFakeData": true
 }
