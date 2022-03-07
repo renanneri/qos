@@ -1,14 +1,16 @@
 {
   "fields": [
     {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "subject",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
+      "fieldType": "String"
     },
     {
       "fieldName": "message",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
+      "fieldType": "String"
     }
   ],
   "relationships": [

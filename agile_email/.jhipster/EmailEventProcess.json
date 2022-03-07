@@ -15,12 +15,10 @@
   ],
   "relationships": [
     {
-      "relationshipType": "many-to-many",
-      "otherEntityName": "contact",
-      "otherEntityRelationshipName": "personList",
-      "relationshipName": "contact",
-      "otherEntityField": "firstName",
-      "ownerSide": true
+      "relationshipType": "many-to-one",
+      "otherEntityName": "personList",
+      "relationshipName": "personList",
+      "otherEntityField": "name"
     }
   ],
   "entityType": "process-binding",
