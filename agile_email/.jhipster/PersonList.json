@@ -1,0 +1,31 @@
+{
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "personList",
+      "relationshipName": "contact",
+      "otherEntityField": "firstName",
+      "ownerSide": true
+    }
+  ],
+  "entityType": "domain",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "name": "PersonList",
+  "changelogDate": "20220307135616",
+  "skipFakeData": true
+}

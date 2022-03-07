@@ -2,29 +2,31 @@
   "fields": [
     {
       "fieldName": "subject",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "recipient",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     },
     {
       "fieldName": "message",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "group",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "personList",
+      "otherEntityRelationshipName": "emailEvent",
+      "relationshipName": "personList",
+      "otherEntityField": "name"
+    }
+  ],
   "entityType": "domain",
-  "service": "serviceClass",
   "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
   "jpaMetamodelFiltering": false,
   "readOnly": true,
-  "pagination": "no",
   "name": "EmailEvent",
-  "changelogDate": "20210401000001",
+  "changelogDate": "20220307135616",
   "skipFakeData": true
 }

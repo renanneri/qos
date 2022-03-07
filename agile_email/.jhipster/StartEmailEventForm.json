@@ -1,8 +1,9 @@
 {
   "fields": [
     {
-      "fieldName": "subject",
-      "fieldType": "String"
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
   "relationships": [],

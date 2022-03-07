@@ -1,21 +1,17 @@
 {
-  "fields": [
+  "fields": [],
+  "relationships": [
     {
-      "fieldName": "subject",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
-    },
-    {
-      "fieldName": "message",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
+      "relationshipName": "personList",
+      "otherEntityName": "personList",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
     }
   ],
-  "relationships": [],
   "entityType": "user-task-form",
   "processBpmnId": "EmailEventProcess",
   "processEntityName": "EmailEventProcess",
-  "taskBpmnId": "create_email_event",
+  "taskBpmnId": "choose_person_list",
   "domainEntityName": "EmailEvent",
   "service": "serviceClass",
   "dto": "mapstruct",
@@ -23,6 +19,6 @@
   "readOnly": false,
   "pagination": "no",
   "skipFakeData": true,
-  "name": "TaskCreateEvent",
+  "name": "TaskChoosePersonList",
   "changelogDate": "20210401000004"
 }

@@ -9,26 +9,18 @@
       "fieldType": "String"
     },
     {
-      "fieldName": "gender",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "mailAdress",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "group",
+      "fieldName": "Email",
       "fieldType": "String"
     }
   ],
   "relationships": [],
   "entityType": "domain",
-  "service": "serviceClass",
   "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
   "jpaMetamodelFiltering": false,
   "readOnly": false,
-  "pagination": "no",
   "name": "Contact",
-  "changelogDate": "20210401000001",
+  "changelogDate": "20220307135616",
   "skipFakeData": true
 }
