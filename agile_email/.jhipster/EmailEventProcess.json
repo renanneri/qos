@@ -1,23 +1,28 @@
 {
   "fields": [
     {
-      "fieldName": "subject",
+      "fieldName": "name",
       "fieldType": "String"
     },
     {
-      "fieldName": "recipient",
+      "fieldName": "subject",
       "fieldType": "String"
     },
     {
       "fieldName": "message",
       "fieldType": "String"
-    },
-    {
-      "fieldName": "group",
-      "fieldType": "String"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "personList",
+      "relationshipName": "contact",
+      "otherEntityField": "firstName",
+      "ownerSide": true
+    }
+  ],
   "entityType": "process-binding",
   "processBpmnId": "EmailEventProcess",
   "domainEntityName": "EmailEvent",
