@@ -1,15 +1,21 @@
 package com.mycompany.myapp;
 
 import com.mycompany.myapp.service.MailService;
+import com.mycompany.myapp.service.PersonListService;
+import com.mycompany.myapp.service.ContactService;
+import com.mycompany.myapp.service.dto.ContactDTO;
+import com.mycompany.myapp.service.dto.EmailEventDTO;
+import com.mycompany.myapp.service.dto.EmailEventProcessDTO;
+import com.mycompany.myapp.service.dto.PersonListDTO;
+
+import java.util.Optional;
+import java.util.Set;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.thymeleaf.context.Context;
-import org.thymeleaf.spring5.SpringTemplateEngine;
 
-import java.util.Locale;
 
 @Component
 public class EmailSendDelegate implements JavaDelegate {
@@ -18,14 +24,32 @@ public class EmailSendDelegate implements JavaDelegate {
     MailService mailService;
 
     @Autowired
-    SpringTemplateEngine templateEngine;
+    PersonListService personListService;
+
+    @Autowired
+    ContactService contactService;
+
 
     @Override
-    public void execute(DelegateExecution delegateExecution) throws Exception {      
-        String to = "xxx@gmail.com";
-        String subject = "[AgileKip] Testando envio de email " ;
-        Context context = new Context(Locale.getDefault());
-        String content = templateEngine.process("mailSendTemplate/mailSendTemplate", context);
-        mailService.sendEmail(to, subject, content, false, true);
+    public void execute(DelegateExecution delegateExecution) throws Exception { 
+   
+        EmailEventProcessDTO emailEventProcess = (EmailEventProcessDTO) delegateExecution.getVariable("processInstance");
+        EmailEventDTO emailEvent = emailEventProcess.getEmailEvent();
+        PersonListDTO personList = emailEvent.getPersonList();
+
+        Optional<PersonListDTO> personListOptional = personListService.findOne(personList.getId());
+        personList = personListOptional.get();
+        Set<ContactDTO> contacts = personList.getContacts();
+
+        String subject = emailEvent.getSubject();
+        String message = emailEvent.getMessage();
+
+        for(ContactDTO contact: contacts){
+            Optional<ContactDTO> contactOptional = contactService.findOne(contact.getId());
+            contact = contactOptional.get();
+            String to = contact.getEmail();
+            mailService.sendEmail(to, subject, message, false, false);
+        }
+
     }
 }
